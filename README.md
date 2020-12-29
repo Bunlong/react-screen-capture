@@ -1,10 +1,10 @@
-# react-pip-window
+# react-screen-capture
 
-If you think any of the `react-pip-window` can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
+If you think any of the `react-screen-capture` can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
 
 ## 🌟 Contribution
 
-We'd love to have your helping hand on contributions to `react-pip-window` by forking and sending a pull request!
+We'd love to have your helping hand on contributions to `react-screen-capture` by forking and sending a pull request!
 
 Your contributions are heartily ♡ welcome, recognized and appreciated. (✿◠‿◠)
 
