@@ -4,9 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from "rollup-plugin-terser";
 import pkg from './package.json';
-
-// import external from 'rollup-plugin-peer-deps-external';
-// import builtins from 'builtin-modules'
+import postcss from "rollup-plugin-postcss";
 
 export default {
   input: 'src/react-screen-capture.ts',
@@ -47,6 +45,7 @@ export default {
     commonjs({
       extensions: ['.js', '.ts', '.tsx'],
     }),
-    terser()
+    terser(),
+    postcss(),
   ],
 };

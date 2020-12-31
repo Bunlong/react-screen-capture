@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, CSSProperties } from 'react';
 import html2canvas from 'html2canvas';
+import "./style.scss";
 
 interface Props {
   onStartCapture: () => null;
   onEndCapture: (url: string) => null;
 }
+
+// const styles = {
+// };
 
 interface State {
   on: boolean;
@@ -17,7 +21,7 @@ interface State {
   isMouseDown: boolean;
   windowWidth: number;
   windowHeight: number;
-  borderWidth: number | string;
+  borderWidth: number | string | CSSProperties;
   cropPositionTop: number;
   cropPositionLeft: number;
   cropWidth: number;
@@ -81,7 +85,6 @@ export default class ScreenCapture extends Component<Props, State> {
       startY,
       borderWidth
     } = this.state;
-
     let cropPositionTop = startY;
     let cropPositionLeft = startX;
     const endX = e.clientX;
@@ -218,6 +221,7 @@ export default class ScreenCapture extends Component<Props, State> {
     if (typeof children === 'function') {
       return children(props);
     }
+
     return children;
   };
 
@@ -227,9 +231,12 @@ export default class ScreenCapture extends Component<Props, State> {
       crossHairsTop,
       crossHairsLeft,
       borderWidth,
-      isMouseDown
+      isMouseDown,
     } = this.state;
-
+    console.log('================')
+    console.log(borderWidth)
+    console.log('================')
+    console.log(isMouseDown)
     if (!on) {
       return this.renderChild();
     }
@@ -242,12 +249,12 @@ export default class ScreenCapture extends Component<Props, State> {
       >
         {this.renderChild()}
         <div
-          className={`overlay ${isMouseDown && 'highlighting'}`}
-          style={{ borderWidth }}
+          className={`overlay ${isMouseDown && "highlighting"}`}
+          // style={{ borderWidth }}
         />
         <div
-          className='crosshairs'
-          style={{ left: crossHairsLeft + 'px', top: crossHairsTop + 'px' }}
+          className="crosshairs"
+          style={{ left: crossHairsLeft + "px", top: crossHairsTop + "px" }}
         />
       </div>
     );
