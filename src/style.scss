@@ -1,17 +1,6 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 body {
   padding: 0;
   overflow-x: hidden;
-}
-
-h1,
-p {
-  font-family: Lato;
 }
 
 .crosshairs {
@@ -59,27 +48,11 @@ p {
   border-style: solid;
 }
 
-.modal__header {
-  display: flex;
-}
-
-.modal__header button {
-  margin-left: auto;
-  font-size: 30px;
-  border: none;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.modal__body {
-  padding: 20px;
-}
-
-.modal__footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.image__container {
-  overflow: auto;
+.crosshairs,
+.crosshairs:before,
+.crosshairs:after,
+.overlay,
+.overlay:before,
+.overlay:after {
+  box-sizing: border-box;
 }

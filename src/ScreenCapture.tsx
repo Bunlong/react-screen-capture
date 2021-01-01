@@ -7,9 +7,6 @@ interface Props {
   onEndCapture: (url: string) => null;
 }
 
-// const styles = {
-// };
-
 interface State {
   on: boolean;
   startX: number;
@@ -233,10 +230,7 @@ export default class ScreenCapture extends Component<Props, State> {
       borderWidth,
       isMouseDown,
     } = this.state;
-    console.log('================')
-    console.log(borderWidth)
-    console.log('================')
-    console.log(isMouseDown)
+    
     if (!on) {
       return this.renderChild();
     }
@@ -249,12 +243,12 @@ export default class ScreenCapture extends Component<Props, State> {
       >
         {this.renderChild()}
         <div
-          className={`overlay ${isMouseDown && "highlighting"}`}
-          // style={{ borderWidth }}
+          className={`overlay ${isMouseDown && 'highlighting'}`}
+          style={{ borderWidth: `${borderWidth}` }}
         />
         <div
-          className="crosshairs"
-          style={{ left: crossHairsLeft + "px", top: crossHairsTop + "px" }}
+          className='crosshairs'
+          style={{left: crossHairsLeft + 'px', top: crossHairsTop + 'px'}}
         />
       </div>
     );

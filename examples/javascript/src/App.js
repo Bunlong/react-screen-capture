@@ -3,9 +3,7 @@ import { ScreenCapture } from 'react-screen-capture';
 
 class App extends React.Component {
   state = {
-    screenCapture: "",
-    open: false,
-    title: "gimmeatitle"
+    screenCapture: '',
   };
 
   handleScreenCapture = screenCapture => {
@@ -19,14 +17,14 @@ class App extends React.Component {
     );
   };
 
-  handleOnChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
-
   handleSave = () => {
-    console.log(this.state.title, this.state.screenCapture);
+    const screenCaptureSource = this.state.screenCapture;
+    const downloadLink = document.createElement('a');
+    const fileName = 'react-screen-capture.png';
+
+    downloadLink.href = screenCaptureSource;
+    downloadLink.download = fileName;
+    downloadLink.click();
   };
 
   render() {
@@ -56,16 +54,8 @@ class App extends React.Component {
                   possimus eaque repellendus consequuntur quisquam nihil, sit ullam
                   ratione.
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  asperiores dignissimos delectus. Rerum, recusandae alias nobis suscipit
-                  explicabo minus inventore dicta? Provident velit error minus nemo
-                  asperiores dolorum possimus quod? Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolorem sequi at sit nulla, tenetur cum quam harum
-                  quisquam molestias voluptatum repellendus, autem in? Quia error
-                  asperiores sed tempora nobis. Facilis!
-                </p>
-                <img src={this.state.screenCapture} alt="screen capture" />
+                <img src={this.state.screenCapture} alt='react-screen-capture' />
+                {this.state.screenCapture && <button onClick={this.handleSave}>Save</button>}
               </div>
             </main>
           </div>
