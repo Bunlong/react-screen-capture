@@ -24,16 +24,19 @@ yarn add react-screen-capture
 
 <table>
   <tr>
-    <th>Function</th>
+    <th>API</th>
+    <th>Type</th>
     <th>Description</th>
   </tr>
   <tr>
     <td>onStartCapture</td>
-    <td>Is used to start capture webpage's screen.</td>
+    <td><code>() => null</code></td>
+    <td>To start capture webpage's screen.</td>
   </tr>
   <tr>
     <td>onEndCapture</td>
-    <td>Is used to end capture webpage's screen and get base64 source.</td>
+    <td><code>(base64Source: string) => null</code></td>
+    <td>To end capture webpage's screen and get base64 source.</td>
   </tr>
 </table>
 
