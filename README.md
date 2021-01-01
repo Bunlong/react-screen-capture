@@ -6,7 +6,9 @@
 
 A tiny React library allows you to take a snapshot of the webpage's screen or part of the screen.
 
-💻 [Demo](https://codesandbox.io/s/react-screen-capture-i9f4d)
+## 💻 Live
+
+[Demo](https://codesandbox.io/s/react-screen-capture-i9f4d)
 
 ## 🔧 Install
 
