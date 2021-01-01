@@ -8,6 +8,12 @@ A tiny React library allows you to take a snapshot of the webpage's screen or pa
 
 ### 💻 Live [Demo](https://codesandbox.io/s/react-screen-capture-i9f4d)
 
+## 🎁 Features
+
+* Easy to use
+* Compatible with both JavaScript and TypeScript
+* Take a snapshot of the webpage's screen or part of the screen
+
 ## 🔧 Install
 
 react-screen-capture is available on npm. It can be installed with the following command:
