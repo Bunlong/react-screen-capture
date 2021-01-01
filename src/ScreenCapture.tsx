@@ -1,6 +1,6 @@
 import React, { Component, CSSProperties } from 'react';
 import html2canvas from 'html2canvas';
-import "./style.scss";
+import './styles.scss';
 
 interface Props {
   onStartCapture: () => null;
