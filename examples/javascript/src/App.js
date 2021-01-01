@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import { ScreenCapture } from 'react-screen-capture';
 
 class App extends React.Component {
@@ -7,14 +7,7 @@ class App extends React.Component {
   };
 
   handleScreenCapture = screenCapture => {
-    this.setState(
-      {
-        screenCapture
-      },
-      () => {
-        screenCapture;
-      }
-    );
+    this.setState({screenCapture});
   };
 
   handleSave = () => {
@@ -34,30 +27,30 @@ class App extends React.Component {
       <ScreenCapture onEndCapture={this.handleScreenCapture}>
         {({ onStartCapture }) => (
           <div>
-            <main>
-              <div>
-                <button onClick={onStartCapture}>Capture</button>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                  distinctio exercitationem a tempore delectus ducimus necessitatibus
-                  dolor voluptatum aut est quaerat aspernatur, vero quod aperiam odio.
-                  Exercitationem distinctio in voluptates?
-                </p>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut molestiae
-                  deserunt voluptas, labore a expedita error eligendi sunt fugit, nesciunt
-                  ullam corrupti quas natus, officia rerum? Officia cum amet quidem.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, iusto
-                  repellat quae quos in rerum sunt obcaecati provident placeat hic saepe
-                  possimus eaque repellendus consequuntur quisquam nihil, sit ullam
-                  ratione.
-                </p>
-                <img src={this.state.screenCapture} alt='react-screen-capture' />
-                {this.state.screenCapture && <button onClick={this.handleSave}>Save</button>}
-              </div>
-            </main>
+            <button onClick={onStartCapture}>Capture</button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              distinctio exercitationem a tempore delectus ducimus necessitatibus
+              dolor voluptatum aut est quaerat aspernatur, vero quod aperiam odio.
+              Exercitationem distinctio in voluptates?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut molestiae
+              deserunt voluptas, labore a expedita error eligendi sunt fugit, nesciunt
+              ullam corrupti quas natus, officia rerum? Officia cum amet quidem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, iusto
+              repellat quae quos in rerum sunt obcaecati provident placeat hic saepe
+              possimus eaque repellendus consequuntur quisquam nihil, sit ullam
+              ratione.
+            </p>
+            <center>
+              <img src={this.state.screenCapture} alt='react-screen-capture' />
+              <p>
+                {this.state.screenCapture && <button onClick={this.handleSave}>Download</button>}
+              </p>
+            </center>
           </div>
         )}
       </ScreenCapture>

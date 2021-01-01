@@ -58,7 +58,7 @@ export default class ScreenCapture extends Component<Props, State> {
 
     this.setState({
       windowWidth,
-      windowHeight
+      windowHeight,
     });
   };
 
@@ -139,7 +139,7 @@ export default class ScreenCapture extends Component<Props, State> {
       cropWidth,
       cropHeigth,
       cropPositionTop: cropPositionTop,
-      cropPositionLeft: cropPositionLeft
+      cropPositionLeft: cropPositionLeft,
     });
   };
 
@@ -153,7 +153,7 @@ export default class ScreenCapture extends Component<Props, State> {
       cropPositionTop: startY,
       cropPositionLeft: startX,
       isMouseDown: true,
-      borderWidth: `${prevState.windowWidth}px ${prevState.windowHeight}px`
+      borderWidth: `${prevState.windowWidth}px ${prevState.windowHeight}px`,
     }));
   };
 
@@ -162,7 +162,7 @@ export default class ScreenCapture extends Component<Props, State> {
     this.setState({
       on: false,
       isMouseDown: false,
-      borderWidth: 0
+      borderWidth: 0,
     });
   };
 
@@ -171,7 +171,7 @@ export default class ScreenCapture extends Component<Props, State> {
       cropPositionTop,
       cropPositionLeft,
       cropWidth,
-      cropHeigth
+      cropHeigth,
     } = this.state;
     const body = document.querySelector('body');
 
@@ -193,7 +193,7 @@ export default class ScreenCapture extends Component<Props, State> {
             0,
             0,
             cropWidth,
-            cropHeigth
+            cropHeigth,
           );
         }
         
@@ -205,7 +205,7 @@ export default class ScreenCapture extends Component<Props, State> {
 
     this.setState({
       crossHairsTop: 0,
-      crossHairsLeft: 0
+      crossHairsLeft: 0,
     });
   };
 
