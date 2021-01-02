@@ -28,11 +28,11 @@ react-screen-capture is available on yarn as well. It can be installed with the 
 yarn add react-screen-capture
 ```
 
-## 🔰 APIs
+## 🔰 Callbacks
 
 <table>
   <tr>
-    <th>API</th>
+    <th>Callback</th>
     <th>Type</th>
     <th>Description</th>
   </tr>
