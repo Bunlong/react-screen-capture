@@ -131,6 +131,9 @@ export default class ScreenCapture extends Component<Props, State> {
         cropPositionTop = endY;
       }
     }
+    
+    cropWidth *= window.devicePixelRatio;
+    cropHeigth *= window.devicePixelRatio;
 
     this.setState({
       crossHairsTop: e.clientY,
