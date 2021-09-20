@@ -1,6 +1,6 @@
 {
   "name": "react-screen-capture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny React library allows you to take a snapshot of the webpage's screen or part of the screen.",
   "author": "Bunlong <bunlong.van@gmail.com>",
   "license": "MIT",
