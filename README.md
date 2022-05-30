@@ -131,6 +131,40 @@ How to contribute:
 - Spread the word
 - Reach out with any feedback
 
+## 🏆 Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Bunlong">
+        <img src="https://avatars0.githubusercontent.com/u/1308397?s=400&u=945dc6b97571e2b98b659d34b1c81ae2514046bf&v=4" width="100" alt="Bunlong" />
+        <br />
+        <sub>
+          <b>Bunlong</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/MarkusHobisch">
+        <img src="https://avatars.githubusercontent.com/u/5236603?v=4" width="100" alt="Markus Hobisch" />
+        <br />
+        <sub>
+          <b>Markus Hobisch</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/akashkhudia">
+        <img src="https://avatars.githubusercontent.com/u/29786275?v=4" width="100" alt="Akash Khudia" />
+        <br />
+        <sub>
+          <b>Akash Khudia</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## ⚖️ License
 
 The MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
