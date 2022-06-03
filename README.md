@@ -114,6 +114,15 @@ class App extends React.Component {
 export default App;
 ```
 
+## 📜 Changelog
+
+Latest version 1.1.0 (2022-06-01):
+
+  * Support React 18
+
+Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-screen-capture/blob/master/CHANGELOG.md).
+
+
 ## ❗ Issues
 
 If you think any of the `react-screen-capture` can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
