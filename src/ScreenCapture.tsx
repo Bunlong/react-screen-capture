@@ -188,8 +188,8 @@ export default class ScreenCapture extends Component<Props, State> {
     	const scaleCropWidth = cropWidth * window.devicePixelRatio;
 	    const scaleCropHeigth = cropHeigth * window.devicePixelRatio;
 
-        croppedCanvas.width = cropWidth;
-        croppedCanvas.height = cropHeigth;
+        croppedCanvas.width = scaleCropWidth;
+        croppedCanvas.height = scaleCropHeigth;
         
         if (croppedCanvasContext) {
           croppedCanvasContext.drawImage(
@@ -200,8 +200,8 @@ export default class ScreenCapture extends Component<Props, State> {
             scaleCropHeigth,
             0,
             0,
-            cropWidth,
-            cropHeigth,
+            scaleCropWidth,
+            scaleCropHeigth,
           );
         }
         
