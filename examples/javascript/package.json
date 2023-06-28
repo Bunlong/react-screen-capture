@@ -8,6 +8,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-screen-capture": "file:../..",
     "react-scripts": "^1.1.4"
   },
   "scripts": {
