@@ -116,7 +116,7 @@ export default App;
 
 ## 📜 Changelog
 
-Latest version 1.1.0 (2022-06-01):
+Latest version 1.1.0 (2023-06-28):
 
   * Support React 18
 
