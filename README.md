@@ -116,9 +116,9 @@ export default App;
 
 ## 📜 Changelog
 
-Latest version 1.1.0 (2023-06-28):
+Latest version 1.1.1 (2023-06-29):
 
-  * Support React 18
+  * Fix break screens above 1080 pexels
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-screen-capture/blob/master/CHANGELOG.md).
 
